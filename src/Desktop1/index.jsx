@@ -1,28 +1,6 @@
-import React from 'react';
-import ReactDOM from "react-dom";
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import "./globals.css"
-import "./styleguide.css"
-
-import TextInput from "./TextInput";
-import "./Desktop1/Desktop1.css";
-
-ReactDOM.render(<App />, document.getElementById("app"));
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
-
+import React from "react";
+import TextInput from "../TextInput";
+import "./Desktop1.css";
 
 function Desktop1(props) {
   const {
@@ -44,7 +22,7 @@ function Desktop1(props) {
         <div className="flex-col">
           <div className="overlap-group">
             <div className="flex-row">
-            <img className="rsp-logo-1" src={rspLogo1} />
+              <img className="rsp-logo-1" src={rspLogo1} />
               <TextInput />
             </div>
             <img className="line-1" src={line1} />
